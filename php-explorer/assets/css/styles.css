@@ -1,0 +1,215 @@
+/* font-family: 'IBM Plex Sans Condensed', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed&display=swap');
+
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    height: 100%;
+    background: #e4e4e4;
+}
+
+.aiom-file-explorer {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+
+.aiom-file-explorer-button {
+    display: block;
+    padding: 0.5em;
+    background: #cacaca;
+    min-width: 2em;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-column-gap: 0.25em;
+    grid-row-gap: 0px;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.aiom-file-explorer-button:not(:last-child) {
+    /*border-right: 1px solid #95a5a6;*/
+}
+
+.aiom-file-explorer-button:not(:first-child) {
+    /*border-left: 1px solid #ecf0f1;*/
+}
+
+.aiom-file-explorer-button span {
+    display: block;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    color: #707070;
+}
+
+.aiom-file-explorer-button a:hover {
+    text-decoration: none;
+}
+
+.aiom-file-explorer-button img {
+    width: 1.5em;
+}
+
+.aiom-file-explorer-button {
+    transition: background-color 0.8s ease;
+}
+
+.aiom-file-explorer-button:hover {
+    background: #e5e5e5;
+}
+
+.aiom-file-explorer-button:active {
+    background: #bdc3c7;
+}
+
+.aiom-file-explorer-toolbar {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto 1fr auto;
+    grid-template-rows: auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background: #cacaca;
+}
+
+.aiom-file-explorer-toolbar-label {
+    color: #707070;
+    padding: 0.5em;
+}
+
+
+.aiom-file-explorer-toolbar-extra {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto auto auto auto auto auto;
+    grid-template-rows: auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    color: #fff;
+    background: #0062ff;
+}
+
+.aiom-file-explorer-toolbar-extra * {
+    color: #fff;
+}
+
+.aiom-file-explorer-toolbar-extra .aiom-file-explorer-button {
+    transition: background-color 0.8s ease;
+    background: #0353e9;
+}
+
+
+.aiom-file-explorer-toolbar-extra .aiom-file-explorer-button * {
+    color: #fff !important;
+}
+
+.aiom-file-explorer-toolbar-extra .aiom-file-explorer-button:hover {
+    background: #0062ff;
+} 
+
+.aiom-file-explorer-toolbar-extra .aiom-file-explorer-button:active {
+    background: #3867d6;
+}
+
+.aiom-file-explorer-toolbar-extra .aiom-file-explorer-button:not(:last-child) {
+    border-right: 1px solid #0353e9;
+}
+
+.aiom-file-explorer-toolbar-extra .aiom-file-explorer-button:not(:first-child) {
+    border-left: 1px solid #0353e9;
+}
+
+
+.aiom-file-explorer table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-y: scroll;
+}
+
+.aiom-file-explorer table td {
+    height: 2em;
+}
+
+.aiom-file-explorer table th {
+    height: 2em;
+    background: #dcdcdc;
+}
+
+.aiom-file-explorer table th,
+.aiom-file-explorer table td {
+    padding: 0.3em;
+    font-size: 0.9em;
+}
+
+.aiom-file-explorer table th:first-child,
+.aiom-file-explorer table td:first-child {
+    max-width: 0.5em;
+}
+ 
+
+.aiom-file-explorer table th:nth-child(2),
+.aiom-file-explorer table td:nth-child(2) {
+    overflow: hidden;
+    min-width: 10em;
+}
+
+.aiom-file-explorer table tbody {
+    background: #f3f3f3;
+}
+
+.aiom-file-explorer table tr {
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.aiom-file-explorer table tbody tr {
+    border-top: 1px solid #fff;
+}
+
+.aiom-file-explorer table td:not(:nth-child(2)) {
+    text-align: center;
+}
+
+.aiom-file-explorer table tbody tr {
+    cursor: pointer;
+    transition: background-color 0.8s ease;
+}
+
+.aiom-file-explorer table tbody tr:hover {
+    background: #e5e5e5;
+}
+
+.aiom-file-explorer table td:nth-child(2) {
+    display: grid;
+    grid-template-columns: 1.2em auto;
+    grid-template-rows: auto;
+    grid-column-gap: 0.5em;
+    grid-row-gap: 0px;
+    justify-content: flex-start;
+    text-decoration: none;
+}
+
+.aiom-file-explorer table td:nth-child(2) > * {
+    display: block;
+    margin-top: 0.35em;
+}
+
+.aiom-file-link {
+    cursor: pointer;
+}
+
+.aiom-file-explorer-toolbar-extra {
+    display: none;
+}
+
+.aiom-explorer-files-input {
+    display: none;
+}
+
+.aiom-file-explorer-file-row {
+    transition: background-color 0.8s ease;
+}
+
+.aiom-file-explorer-file-row[data-is-select="true"] {
+    background: #E5E5E5;
+}
